@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('123qwe')
         ]);
 
-         $category = DB::table('ref_category')->insertGetId([
+        $category = DB::table('ref_category')->insertGetId([
             'category' => 'Test1',
             'created_by' => 1
         ]);

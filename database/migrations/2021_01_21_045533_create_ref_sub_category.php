@@ -15,7 +15,7 @@ class CreateRefSubCategory extends Migration
     {
         Schema::create('ref_sub_category', function (Blueprint $table) {
             $table->id();
-            $table->string('category_id')->nullable();
+            $table->bigInteger('category_id')->nullable();
             $table->string('sub_category')->nullable();
             $table->bigInteger('created_by')->nullable();
             $table->timestamps();

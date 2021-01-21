@@ -7,7 +7,7 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [PageController::class, 'index']);
 
-Route::get('/user', [UserController::class, 'index']);
+// Route::get('/user', [UserController::class, 'index']);
 
 // Route::get('/user/{id}/edit', [UserController::class, 'edit']);
 // Route::get('/user/create', [UserController::class, 'create']);

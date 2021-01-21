@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,11 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/getData', [PageController::class, 'getData']);
+// Route::resource('/user', UserController::class)
+// 	->except('show');
+
+Route::post('/fetchCategory', [PageController::class, 'fetchCategory']);
+// 	->except('show');
 
 //get
 //post
